@@ -1,0 +1,307 @@
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #87CEEB;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre .subtitulo {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre-content img {
+    width: 300px;
+    height: auto;
+}
+
+.sobre-texto {
+    max-width: 600px;
+    text-align: left;
+}
+
+.sobre-texto p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Seção Serviços */
+.servicos {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.servicos .descricao {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos-lista {
+    margin-top: 40px;
+}
+
+.servicos-lista ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.servicos-lista ul li {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.servicos-lista ul li:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Seção Corretores */
+.corretores {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.corretores h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.corretores-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.corretores-content img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.corretores-texto {
+    max-width: 600px;
+    text-align: left;
+}
+
+.corretores-texto p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.link-corretores {
+    color: #1E90FF;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-corretores:hover {
+    color: #0066CC;
+}
+
+/* Seção Contato */
+.contato {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.mapa {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contato-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contato-info p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.telefones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.telefone-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.telefone-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.telefone-item p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .sobre h1 {
+        font-size: 1.8em;
+    }
+    
+    .sobre-content,
+    .corretores-content {
+        flex-direction: column;
+    }
+    
+    .servicos-lista ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
